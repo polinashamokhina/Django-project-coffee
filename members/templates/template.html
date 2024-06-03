@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'myfirst.css' %}">
+<body>
+
+<table border='1'>
+    <tr>
+        <th>ID</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+    </tr>
+    {% for x in mymembers %}
+        <tr>
+        <td>{{ x.id }}</td>
+            <td>{{ x.firstname }}</td>
+        <td>{{ x.lastname }}</td>
+        </tr>
+    {% endfor %}
+</table>  
+    
+{% comment "this were the first tests" %}
+
+{% include "mymenu.html" with me="TOBIAS" sponsor="W3SCHOOLS" %} ({{me}},{{sponsor}})
+
+{% endcomment %}
+
+<!-- {% include 'footer.html' %} -->
+
+</body>
+</html>
