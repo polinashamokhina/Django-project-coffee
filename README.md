@@ -15,7 +15,7 @@ The goal of this project was to create a database with member's personal data. I
 To set up the project locally, follow these steps:
 
 - Clone the repository:
-git clone https://github.com/yourusername/django-coffee-club.git
+git clone https://github.com/polinashamokhina/django-project-coffee.git
 cd django-coffee-club
 - Create a virtual environment and activate it:
 python3 -m venv venv
