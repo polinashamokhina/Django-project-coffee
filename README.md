@@ -16,26 +16,46 @@ To set up the project locally, follow these steps:
 
 - Clone the repository:
 git clone https://github.com/polinashamokhina/django-project-coffee.git
+```console
 cd django-coffee-club
+```
 - Create a virtual environment and activate it:
+```console
 python3 -m venv venv
+```
+```console
 source venv/bin/activate
+```
 - Install the required packages:
+```console
 python3 -m pip install Django
+```
 - Start a Django  project:
+```console
 django-admin startproject my_tennis_club
+```
 - Start an application:
+```console
 python3 manage.py startapp members
+```
 -Create a superuser for accessing the admin panel:
+```console
 python manage.py createsuperuser
+```
 - Install a package for PostgreSQL:
+```console
 pip3 install psycopg2-binary
+```
 -Create AWS account and a database in RDS (Amazon RDS, choose PostgreSQL while setting up)
 -Update DATABASES settings in settings.py with your database credentials.
 - Install the required packages:
+```console
 python3 -m pip freeze > requirements.txt
+```
 -Run database migrations:
-python manage.py migrate
+```console
+python3 manage.py migrate
+```
 -Create an Elastic Beanstalk application and environment.
 -Create a .zip file to upload it to the EB
 
